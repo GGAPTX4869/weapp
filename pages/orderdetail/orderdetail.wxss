@@ -1,0 +1,55 @@
+/* pages/orderdetail/orderdetail.wxss */
+.page{
+  background-color: rgb(245, 243, 239);
+  height: 100vh;
+  width: 100vw;
+}
+.send{
+  display: flex;
+  height: 120rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+}
+.ji{
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  text-align: center;
+  height: 30rpx;
+  width:30rpx;
+  line-height: 30rpx; 
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  font-size: 20rpx;
+}
+.jitable{
+  flex: 5;
+  border-bottom: 2rpx solid rgb(230, 225, 220);
+  padding: 15rpx 0rpx 0rpx 5rpx;
+}
+.inputname{
+  padding-top: 10rpx;
+  color: rgb(189, 184, 178);
+  font-size:smaller;
+}
+.get{
+  display: flex;
+  height: 120rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+}
+.shou{
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  text-align: center;
+  height: 30rpx;
+  width:30rpx;
+  line-height: 30rpx; 
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+  font-size: 20rpx;
+}
+.inputshou{
+  padding-top: 10rpx;
+  color: rgb(189, 184, 178);
+  font-size:smaller;
+}

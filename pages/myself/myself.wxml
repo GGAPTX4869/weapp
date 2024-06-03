@@ -1,0 +1,125 @@
+<view class="up">
+<view class="userlist">
+
+<view class="user">
+<view class="yonghu">
+<image src = "../../images/avatar.png"></image>
+tb123456789
+</view>
+</view>
+<view class="right-boxes">
+
+<view class="unit1">
+  <view class="picture">
+<image src = "../../images/出库2.png"></image>
+</view>
+<view class="wenzi">出库码</view>
+</view>
+
+<view class="unit1">
+  <view class="picture">
+<image src = "../../images/设置.png"></image>
+</view>
+<view class="wenzi">设置</view>
+</view>
+</view>
+
+
+
+
+</view>
+
+<view class = "second">
+
+<view class = "unit">
+<view class = "number">1</view>
+<view class = "text">手机号</view>
+</view>
+
+<view class = "unit">
+<view class = "number">0</view>
+<view class = "text">菜鸟好友</view>
+</view>
+
+<view class = "unit">
+<view class = "number">16</view>
+<view class = "text">地址薄</view>
+</view>
+
+<view class = "unit">
+<view class = "number">0</view>
+<view class = "text">红包卡券</view>
+</view>
+
+<view class = "unit">
+<view class = "number">1</view>
+<view class = "text">导入包裹</view>
+</view>
+
+</view>
+</view>
+
+<view class="bottom">
+<view class="card">
+  <view class="my-benefits">我的权益</view>
+  <view class="container">
+    <view class="icon">
+      <image src="../../images/会员.png" mode="aspectFit"></image>
+      <view class="name">寄件会员</view>
+    </view>
+    <view class="icon">
+      <image src="../../images/笑脸.png" mode="aspectFit"></image>
+      <view class="name">果酱积分</view>
+    </view>
+    <view class="icon">
+      <image src="../../images/服务中心.png" mode="aspectFit"></image>
+      <view class="name">服务中心</view>
+    </view>
+    <view class="icon">
+      <image src="../../images/能量.png" mode="aspectFit"></image>
+      <view class="name">绿色能量</view>
+    </view>
+  </view>
+</view>
+
+<view class="card">
+  <view class="my-benefits">我的订单</view>
+  <view class="container">
+    <view class="icon">
+      <image src="../../images/寄件.png" mode="aspectFit"></image>
+      <view class="name">寄件订单</view>
+    </view>
+    <view class="icon">
+      <image src="../../images/回收订单.png" mode="aspectFit"></image>
+      <view class="name">回收订单</view>
+    </view>
+    <view class="icon">
+      <image src="../../images/派车送货单.png" mode="aspectFit"></image>
+      <view class="name">送货订单</view>
+    </view>
+  </view>
+</view>
+
+<view class="card">
+  <view class="my-benefits">休闲娱乐</view>
+  <view class="container">
+    <view class="icon">
+      <image src="../../images/地图寻宝.png" mode="aspectFit"></image>
+      <view class="name">地图寻宝</view>
+    </view>
+    <view class="icon">
+      <image src="../../images/果树.png" mode="aspectFit"></image>
+      <view class="name">免费领水果</view>
+    </view>
+    <view class="icon">
+      <image src="../../images/礼物.png" mode="aspectFit"></image>
+      <view class="name">一起做公益</view>
+    </view>
+    <view class="icon">
+      <image src="../../images/红包.png" mode="aspectFit"></image>
+      <view class="name">签到领红包</view>
+    </view>
+  </view>
+</view>
+
+</view>

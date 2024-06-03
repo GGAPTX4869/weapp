@@ -1,0 +1,53 @@
+<swiper class="swiper-container" indicator-dots indicator-color="#fff" autoplay interval="3000" circular>
+    <!-- 轮播项 -->
+    <swiper-item>
+      <view class="item">
+        <image src="../adv/adv4.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="../adv/adv5.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="../adv/adv6.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="../adv/adv7.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view style="margin-top: 50rpx;">
+  <van-tree-select
+  items="{{ items }}"
+  main-active-index="{{ mainActiveIndex }}"
+  active-id="{{ activeId }}"
+  bind:click-nav="onClickNav"
+  bind:click-item="onClickItem"
+>
+<view slot="content">
+    <view wx:if="{{ items[mainActiveIndex] && items[mainActiveIndex].children }}">
+      <view wx:for="{{ items[mainActiveIndex].children }}" wx:key="index">
+        <van-card
+          num="{{ item.num }}"
+          tag="{{ item.tag }}"
+          price="{{ item.price }}"
+          desc="{{ item.desc }}"
+          title="{{ item.title }}"
+          thumb="{{ item.thumb }}"
+          thumb-link="/pages/shop_detail/shop_detail?thumb={{item.thumb}}&price={{item.price}}&name={{item.title}}&desc={{item.desc}}&number={{item.num}}&tag={{item.tag}}"
+        >
+          <view slot="footer">
+            <van-button  size="mini" data-item="{{ item }}" bind:tap="addToCart">购物车</van-button>
+            <van-button size="mini"  bindtap="showDialog">立即购买</van-button>
+          </view>
+        </van-card>
+      </view>
+    </view>
+  </view>
+</van-tree-select>
+</view>

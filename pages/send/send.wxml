@@ -1,0 +1,102 @@
+<view class="note">
+  <view style="flex: 5;margin-left: 10rpx;margin-top: 10rpx;">根据相关法律法规要求，寄件须实名认证。推荐您提前线上实名，一次使命长期有效，寄件更便捷哦~</view>
+  <view class="shiming">立即实名</view>
+</view>
+<view>
+  <!-- Tab布局 -->
+  <view class="navBox">
+    <view class="titleBox" wx:for="{{tabList}}" bindtap="tabsOn" data-idx="{{item.index}}">
+      <text class="{{item.index == tabsId ? 'fontColorBox' : ''}}">{{item.title}}</text>
+      <hr class="{{item.index == tabsId ? 'lineBox' : ''}}" />
+    </view>
+  </view>
+  <!-- 内容布局 -->
+  <swiper class="swiperTtemBox" bindchange="slideOn" current="{{tabsId}}" circular>
+    <!-- circular 启用循环滑动 -->
+    <!-- 1111 -->
+    <swiper-item>
+      <view class="send">
+        <view class="ji">寄</view>
+        <navigator class="jitable" url="/pages/jijian/jijian">
+          <view style="font-size:medium;font-weight: bold;">{{send_name && send_tel ? send_name + ' ' + send_tel : '寄件人信息'}}</view>
+          <view class="inputname">{{send_region && send_detail ? send_region + ' ' + send_detail : '请输入真实姓名'}}</view>
+        </navigator>
+        <navigator url="../address/address">
+        <view class="address">地址簿</view>
+      </navigator>
+
+      </view>
+
+      <!-- 收件人 -->
+      <view class="get">
+        <view class="shou">收</view>
+        <navigator url="/pages/shoujian/shoujian" style="flex: 5;padding: 15rpx 0rpx 0rpx 5rpx;">
+          <view style="font-size:medium;font-weight: bold;">{{get_name && get_tel ? get_name + ' ' + get_tel : '收件人信息'}}</view>
+         <view class="inputname">{{get_region && get_detail ? get_region + ' ' + get_detail : '支持智能填写，文本导入，图片识别'}}</view>
+        </navigator>
+        <view class="address">地址簿</view>
+      </view>
+    </swiper-item>
+    <!-- <swiper-item>
+      <view class="send">
+        <view class="ji">寄</view>
+        <view class="jitable">
+          <view style="font-size:medium;font-weight: bold;">寄件人信息</view>
+          <view class="inputname">请输入真实姓名</view>
+        </view>
+        <view class="address">地址簿</view>
+      </view>
+      <!-- 收件人 
+       <view class="get">
+        <view class="shou">收</view>
+        <view style="flex: 5;padding: 15rpx 0rpx 0rpx 5rpx;">
+          <view style="font-size:medium;font-weight: bold;">收件人信息</view>
+          <view class="inputshou">支持智能填写，文本导入，图片识别</view>
+        </view>
+        <view class="address">地址簿</view>
+      </view>
+    </swiper-item>  
+     <swiper-item>
+      <view class="send">
+        <view class="ji">寄</view>
+        <view class="jitable">
+          <view style="font-size:medium;font-weight: bold;">寄件人信息</view>
+          <view class="inputname">请输入真实姓名</view>
+        </view>
+        <view class="address">地址簿</view>
+      </view>
+      <!-- 收件人 -->
+    <!-- <view class="get">
+        <view class="shou">收</view>
+        <view style="flex: 5;padding: 15rpx 0rpx 0rpx 5rpx;">
+          <view style="font-size:medium;font-weight: bold;">收件人信息</view>
+          <view class="inputshou">支持智能填写，文本导入，图片识别</view>
+        </view>
+        <view class="address">地址簿</view>
+      </view>
+    </swiper-item>  -->
+  </swiper>
+</view>
+<view style="border-top: 18rpx solid rgb(243, 244, 249);">
+  <view style="display: flex;margin-top: 20rpx;">
+    <view class="getservice">上门取件</view>
+    <view class="ziji">服务点自寄</view>
+  </view>
+  <view style="display: flex;margin-top: 15rpx;">
+    <view style="text-align: left;flex: 1;padding-left: 20rpx;">付款方式</view>
+    <view style="text-align: right;flex: 1;padding-right: 20rpx;">寄付现结 ></view>
+  </view>
+</view>
+<view class="baoview">
+  <view style="flex: 1;display: flex;margin: auto;padding-left: 20rpx;">
+    <view class="baojia">保价</view>
+    <view style="padding-left: 10rpx;">细则</view>
+  </view>
+  <view class="peifu">未保价最高赔付8倍运费</view>
+</view>
+
+<view style="display: flex;margin-top: 20rpx; height: 50rpx;">
+  <view style="flex: 1;margin: auto;padding-left: 20rpx;">增值服务</view>
+  <view class="go"> > </view>
+</view>
+<view style="margin-top: 100rpx;"><button type="warn" bind:tap="sendDataBack">下单</button></view>

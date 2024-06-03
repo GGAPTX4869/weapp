@@ -1,0 +1,21 @@
+<view class="container">
+  <view class="form-group">
+    <text>Name:</text>
+    <input bindinput="handleNameInput" value="{{name}}" placeholder="Enter name" />
+  </view>
+  <view class="form-group">
+    <text>Tel:</text>
+    <input bindinput="handleTelInput" value="{{tel}}" placeholder="Enter tel" />
+  </view>
+  <view class="form-group">
+    <text>Region:</text>
+    <input bindinput="handleRegionInput" value="{{region}}" placeholder="Enter region" />
+  </view>
+  <view class="form-group">
+    <text>Detail:</text>
+    <input bindinput="handleDetailInput" value="{{detail}}" placeholder="Enter detail" />
+  </view>
+  <navigator url="../address/address">
+  <button bindtap="updateAddress" data-id="{{address._id}}" class="submit-btn">Update Address</button>
+</navigator>
+</view>

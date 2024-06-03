@@ -1,0 +1,77 @@
+
+<view style="display: flex; background-color: whitesmoke;margin-left: 30rpx;text-align: center;height: 50rpx;line-height: 50rpx;">
+  <view style="font-size: smaller;flex: 3;">开启微信先寄后付，下单后自动扣款</view>
+  <view style="font-size: smaller;flex: 1; color: red;"> 点我了解 ></view>
+</view>
+<view>
+
+  <!-- 轮播图区域 -->
+  <swiper class="swiper-container" indicator-dots indicator-color="#fff" autoplay interval="3000" circular>
+    <!-- 轮播项 -->
+    <swiper-item>
+      <view class="item">
+        <image src="../adv/adv1.png" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="../adv/adv2.png" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="../adv/adv3.png" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <view style="display: flex;">
+    <view style="flex: 4;">
+      <input style=" margin: 50rpx 20rpx 40rpx 15rpx ;border: 2rpx solid #1296db;" placeholder="请输入快递单号" bindinput="inputorderNum" value="{{ inputValue }}"/>
+    </view>
+    <view style="flex: 1; margin: 50rpx 0rpx 40rpx 0rpx;">
+      <button type="primary" size="mini" style="background-color:  #1296db;" bind:tap="onSearch">搜索</button>
+    </view>
+  </view>
+</view>
+
+<view wx:if="{{showResult}}">
+  <view wx:for="{{order}}" class="historyc1">
+<navigator url="/pages/orderdetail/orderdetail?detail_num={{item.orderNum}}">
+    <view class="namec">快递单号: {{item.orderNum}}</view>
+    <view class="namec">创建时间：{{item.order_time}}</view>
+    <view style="display: flex;margin-top: 20rpx;">
+      <view class="sender">寄件人:<span style="display: block; flex: 1;">{{item.send_name}}</span></view>
+
+      <view class="container1">
+        <view class="rectangle">
+          <view style="font-size: 20rpx; text-align: center; line-height: 100rpx;">{{item.send_region[0]}}——>{{item.get_region[0]}}</view>
+        </view>
+        <view class="triangle"></view>
+      </view>
+      <view class="getter">收件人:<span style="display: block;">{{item.get_name}}</span></view>
+    </view>
+  </navigator>
+  </view>
+
+</view>
+
+<view wx:else>
+  <van-empty image="search" description="您还没有查找" />
+</view>
+
+<view wx:for="{{listData}}" class="historyc">
+  <view class="namec">快递单号: {{item.orderNum}}</view>
+  <view class="namec">创建时间：{{item.order_time}}</view>
+  <view style="display: flex;margin-top: 20rpx;">
+    <view class="sender">寄件人:<span style="display: block; flex: 1;">{{item.send_name}}</span></view>
+
+    <view class="container1">
+      <view class="rectangle">
+        <view style="font-size: 20rpx; text-align: center; line-height: 100rpx;">{{item.send_region[0]}}——>{{item.get_region[0]}}</view>
+      </view>
+      <view class="triangle"></view>
+    </view>
+    <view class="getter">收件人:<span style="display: block;">{{item.get_name}}</span></view>
+  </view>
+</view>

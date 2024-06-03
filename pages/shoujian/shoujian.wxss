@@ -1,0 +1,71 @@
+/* pages/jijian/jijian.wxss */
+.page{
+  background-color: rgb(233, 231, 228);
+  height: 100vh;
+  width: 100vw;
+
+}
+.note{
+  font-size: 25rpx; 
+  color:rgb(238, 117, 4); 
+  background-color:#fff1da ;
+  height: 40rpx;
+  margin-left: 10rpx;
+  margin-top: 10rpx;
+}
+.jiview{
+  background-color: white;
+  height: 500rpx;
+  border-radius: 50rpx;
+  margin-top: 40rpx;
+}
+.ji{
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  text-align: center;
+  height: 40rpx;
+  width:40rpx;
+  line-height: 40rpx; 
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  font-size: 20rpx;
+}
+.jiperson{
+  font-size:medium;
+  font-weight: bold;
+  margin: 20rpx 20rpx 0rpx 0rpx;
+}
+.shiming{
+  margin-right: 10rpx;
+  border: 2rpx solid rgb(182, 181, 180);
+  border-radius: 75rpx;
+  height: 40rpx;
+  margin-top: 20rpx;
+  text-align: center;
+  font-size:xx-small;
+}
+.rname{
+  margin: 0rpx 40rpx 0rpx 40rpx;
+  border-bottom: 2rpx solid rgb(230, 225, 220);
+  padding-bottom: 20rpx;
+}
+.tel{
+  margin: 0rpx 40rpx 0rpx 40rpx;
+  border-bottom: 2rpx solid rgb(230, 225, 220);
+  padding: 20rpx 0rpx 20rpx 0rpx;
+}
+.picksection{
+  margin: 0rpx 40rpx 0rpx 40rpx;
+  border-bottom: 2rpx solid rgb(230, 225, 220);
+  padding: 20rpx 0rpx 20rpx 0rpx;
+}
+.address{
+  margin: 0rpx 40rpx 0rpx 40rpx;
+  border-bottom: 2rpx solid rgb(230, 225, 220);
+  padding: 20rpx 0rpx 20rpx 0rpx;
+}
+.his{
+  background-color: white;
+  padding: 50rpx 20rpx 50rpx 20rpx;
+  border-radius: 40rpx;
+}

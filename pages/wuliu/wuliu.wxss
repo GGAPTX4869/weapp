@@ -1,0 +1,42 @@
+.container {
+  padding: 20px;
+}
+
+.search-box {
+  margin-bottom: 20px;
+}
+
+.picker {
+  padding: 10px;
+  background-color: #f0f0f0;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #1cbbb4;
+  color: white;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
+.wuliu {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.wuliu view {
+  margin-bottom: 10px;
+}
+
+.wuliu view:last-child {
+  margin-bottom: 0;
+}

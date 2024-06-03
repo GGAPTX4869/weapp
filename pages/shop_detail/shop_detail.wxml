@@ -1,0 +1,21 @@
+<view class="container">
+  <image src="{{thumb}}" mode="aspectFill"></image>
+</view>
+<view style="height: 100rpx; background-color: red;display: flex; color: white; padding: 20rpx;box-sizing: border-box;">
+<view><view>￥{{price}}</view>
+<view style="font-size: x-small;">花呗免密满减</view>
+</view>
+<view style="margin-left: auto;">
+<view style="font-size:medium;">年中开门红</view>
+<view style="font-size: x-small;">热卖中下单立抢</view>
+</view>
+</view>
+<view style="margin-top: 10rpx;margin-left: 10rpx;">{{name}}{{desc}}x{{number}}{{tag}}</view>
+<view><image src="/pages/adv/333.jpg" style="width: 750rpx; height: 300rpx;"></image></view>
+<van-goods-action>
+  <van-goods-action-icon icon="chat-o" text="客服" dot />
+  <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+  <van-goods-action-icon icon="shop-o" text="店铺" />
+  <van-goods-action-button text="加入购物车" type="warning"bind:tap="addToCart" />
+  <van-goods-action-button text="立即购买" bind:tap="onClickButton"/>
+</van-goods-action>

@@ -1,0 +1,49 @@
+<view class="page">
+  <view style="background-color: white; height: 100rpx; padding-left: 20rpx;font-size: large;line-height: 100rpx;">
+    已签收
+  </view>
+  <view style="border: 20rpx solid rgb(245, 243, 239); height: 200rpx;background-color: white; line-height: 50rpx;font-size: 25rpx; color: #1296db;padding-top: 20rpx;">
+    <view style="border: 2rpx solid  #1296db; margin: 20rpx; padding: 10rpx; background-color: #f3fbff;border-radius: 25rpx;">
+      <view style="text-align: left;">2024年x月x日 x时x分</view>
+      <view>您的快递已签收，签收人xx，如有疑问请联系客服或者业务人员，业务人员电话 123456789</view>
+    </view>
+  </view>
+  <view style="margin-top: 15rpx; background-color: white;display: flex ;height: 150rpx; font-size: xx-small;">
+    <view style="margin: 15rpx 20rpx 10rpx 50rpx;">
+      <van-icon name="phone-o" size="70rpx" />
+      <view>联系站点</view>
+    </view>
+    <view style="margin: 15rpx 40rpx 10rpx 10rpx;">
+      <van-icon name="service-o" size="70rpx" />
+      <view>客服</view>
+    </view>
+    <view style="margin: 15rpx 20rpx 10rpx 20rpx;">
+      <van-icon name="volume-o" size="70rpx" />
+      <view>联系收件人</view>
+    </view>
+  </view>
+
+  <view style="margin-top:15rpx; background-color: white; padding: 10rpx 0rpx 30rpx 0rpx;">
+    <view class="send">
+      <view class="ji">寄</view>
+      <view class="jitable">
+        <view style="font-size:medium;font-weight: bold;">{{order[0].send_name}}{{order[0].send_tel}}</view>
+        <view class="inputname">{{order[0].send_region}}{{order[0].send_detail}}</view>
+      </view>
+    </view>
+    <!-- 收件人 -->
+    <view class="get">
+      <view class="shou">收</view>
+      <view style="flex: 5;padding: 15rpx 0rpx 0rpx 5rpx; border-bottom: 2rpx solid rgb(230, 225, 220);">
+        <view style="font-size:medium;font-weight: bold;">{{order[0].get_name}}{{order[0].get_tel}}</view>
+        <view class="inputname">{{order[0].get_region}}{{order[0].get_detail}}</view>
+      </view>
+    </view>
+    <view style="margin:20rpx 0rpx 20rpx 60rpx;font-size: 30rpx; padding: 20rpx 0rpx 30rpx 10rpx;border-bottom: 2rpx solid rgb(230, 225, 220);">
+    <view >快递单号  {{order[0].orderNum}}  复制</view>
+    <view>下单时间  {{order[0].order_time}}</view>
+    </view>
+  </view>
+<view ><image src="../adv/111.jpg"style="width: 740rpx; height: 130rpx;" ></image></view>
+
+</view>

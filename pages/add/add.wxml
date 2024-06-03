@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="form-group">
+    <text class="label">姓名</text>
+    <input class="input" bindinput="handleNameInput" placeholder="输入姓名" />
+  </view>
+  <view class="form-group">
+    <text class="label">电话</text>
+    <input class="input" bindinput="handleTelInput" placeholder="输入电话" />
+  </view>
+  <view class="form-group">
+    <text class="label">地址</text>
+    <input class="input" bindinput="handleRegionInput" placeholder="输入地址" />
+  </view>
+  <view class="form-group">
+    <text class="label">描述</text>
+    <input class="input" bindinput="handleDetailInput" placeholder="输入细节" />
+  </view>
+  <button bindtap="addAddress" class="submit-btn">确定</button>
+</view>

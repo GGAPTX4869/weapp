@@ -1,0 +1,152 @@
+/* 公告 */
+.note{
+  display: flex;
+  font-size: 25rpx; 
+  color:rgb(238, 117, 4); 
+  background-color:#fff1da ;
+  height: 80rpx;
+}
+/* 实名 */
+.shiming{
+  flex: 1;
+  margin-right: 10rpx;
+  border: 2rpx solid rgb(238, 117, 4);
+  border-radius: 75rpx;
+  height: 38rpx;
+  margin-top: 20rpx;
+  text-align: center;
+}
+/* 寄件人信息 */
+.send{
+  display: flex;
+  height: 120rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+}
+.ji{
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  text-align: center;
+  height: 30rpx;
+  width:30rpx;
+  line-height: 30rpx; 
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  font-size: 20rpx;
+}
+.jitable{
+  flex: 5;
+  border-bottom: 2rpx solid rgb(230, 225, 220);
+  padding: 15rpx 0rpx 0rpx 5rpx;
+}
+.inputname{
+  padding-top: 10rpx;
+  color: rgb(189, 184, 178);
+  font-size:smaller;
+}
+.address{
+  flex: 1;
+  margin-right: 10rpx;
+  font-size: small;
+  margin-top: 30rpx;
+}
+.get{
+  display: flex;
+  height: 120rpx;
+  margin-top: 20rpx;
+  box-sizing: border-box;
+}
+.shou{
+  margin: 20rpx 20rpx 0rpx 20rpx;
+  text-align: center;
+  height: 30rpx;
+  width:30rpx;
+  line-height: 30rpx; 
+  border-radius: 100%;
+  background-color: red;
+  color: white;
+  font-size: 20rpx;
+}
+.inputshou{
+  padding-top: 10rpx;
+  color: rgb(189, 184, 178);
+  font-size:smaller;
+}
+/* 上门取件 */
+.getservice{
+  padding: 30rpx 0rpx 0rpx 0rpx;
+  flex: 1;
+  text-align: center;
+  height: 70rpx;
+  border-right: 2rpx solid rgb(230, 225, 220);
+}
+.ziji{
+  padding: 30rpx 0rpx 0rpx 0rpx;
+  flex: 1;
+  text-align: center;
+}
+.baoview{
+  display: flex;
+  margin-top: 20rpx; 
+  border:18rpx solid rgb(243, 244, 249);
+  height: 100rpx;
+  border-radius: 25rpx;
+}
+.baojia{
+  border-right:2rpx solid rgb(0, 0, 0) ;
+  padding: 0rpx 8rpx 0rpx 20rpx;
+}
+.peifu{
+  flex: 1;
+  text-align: right;
+  font-size: small;
+  margin: auto;
+  padding-right: 20rpx;
+}
+.go{
+  flex: 1;
+  text-align: right;
+  font-size: small;
+  margin: auto;
+  padding-right: 20rpx;
+}
+.navBox {
+  /* tab整体样式 */
+  height: 100rpx;
+  padding: 0px 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 18rpx solid rgb(243, 244, 249);
+}
+
+.fontColorBox {
+  /* 选中tab样式 */
+  color: black;
+  font-weight: bold;
+}
+
+.titleBox {
+  /* 未选中tab样式 */
+  color: rgb(168, 170, 175);
+  font-size: 28rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lineBox {
+  /* 线条样式 */
+  width: 32rpx;
+  height: 8rpx;
+  background: black;
+  margin-top: 10rpx;
+  border-radius: 4rpx;
+}
+
+.swiperTtemBox {
+  /* 内容样式 */
+  /* padding: 16rpx; */
+  font-size: 28rpx;
+  height: 280rpx;
+}

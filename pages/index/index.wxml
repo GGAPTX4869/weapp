@@ -1,0 +1,71 @@
+<!-- 在对应的 wxml 文件中 -->
+<view>
+  <image class="photo" src="../index/photos/address.png" />
+  <text class="text">镇江市丹徒区江苏科技大学</text>
+  <image class="photo2" src="../index/photos/rain.png" />
+  <text class="text">2024-05-10</text>
+  <text class="text2">晴转多云</text>
+</view>
+
+<view class="outer-box">
+  <view class="inner-box">
+    <button class="buttons">我的快递</button>
+  </view>
+  <view class="inner-box">
+    <button class="buttons">会员中心</button>
+  </view>
+  <view class="inner-box">
+    <button class="buttons">快递记录</button>
+  </view>
+  <view class="inner-box">
+    <button class="buttons">生活服务</button>
+  </view>
+</view>
+
+<view class="outer-box2">
+  <image class="add" src="../index/photos/add.jpg" />
+</view>
+
+
+<view class="outer-box4">
+  <view class="inner-box2">
+    <view class="section-title">百世快递：SF125658741225544</view>
+    <view class="info-section">
+      <view class="left-section">
+        <text class="text">寄件人: 某某某</text>
+        <text class="text">南京</text>
+      </view>
+      <image class="image-icon" src="../index/photos/jiantou.png"></image>
+      <view class="right-section">
+        <text class="text">收件人: 某某某</text>
+        <text class="text">镇江</text>
+      </view>
+    </view>
+  </view>
+  <view class="hr-line"></view>
+
+  <view class="inner-box4">
+    <view class="blank"></view>
+    <view class="info-section2">
+      <view class="left-section2">
+        <text class="text">已揽收</text>
+        <text class="text">2024-05-10</text>
+      </view>
+      <view class="right-section2">
+        <text class="text">描述信息</text>
+      </view>
+    </view>
+    <view class="hr-line2"></view>
+
+    <view class="info-section2">
+      <view class="left-section2">
+        <text class="text">已揽收</text>
+        <text class="text">2024-05-10</text>
+      </view>
+      <view class="right-section2">
+        <text class="text">描述信息</text>
+      </view>
+    </view>
+  </view>
+  <text class="text4">我也是有底线的</text>
+</view>

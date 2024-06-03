@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="search-box">
+    <picker mode="selector" range="{{companies}}" range-key="name" bindchange="onCompanyChange">
+      <view class="picker">
+        请选择物流公司: {{companies[selectedCompanyIndex].name}}
+      </view>
+    </picker>
+    <input placeholder="请输入快递单号" bindinput="onTrackingNumberInput" />
+    <button bindtap="getWuliu">查询</button>
+  </view>
+
+  <view class="wuliu">
+    <block wx:if="{{wuliuData}}">
+      <view>调试数据: {{wuliuData}}</view>
+      <view>快递公司: {{wuliuData.expName}}</view>
+      <view>快递单号: {{wuliuData.number}}</view>
+      <view>快递公司电话: {{wuliuData.expPhone}}</view>
+      <view>派送状态: {{wuliuData.deliverystatus == '3' ? '已签收' : '未签收'}}</view>
+      <view>取件耗时: {{wuliuData.takeTime}}</view>
+      <view>最新更新时间: {{wuliuData.updateTime}}</view>
+    
+    </block>
+    <block wx:else>
+      <view>请在上方输入快递单号并查询物流信息。</view>
+    </block>
+  </view>
+</view>

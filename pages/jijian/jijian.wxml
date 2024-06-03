@@ -1,0 +1,39 @@
+<view class="page">
+  <view class="note">
+    注：根据国家法律法规要求，寄件人姓名须与您提供的实名信息一致
+  </view>
+  <view class="jiview">
+    <view style="display: flex;height: 100rpx;">
+      <view class="ji">寄</view>
+      <view class="jiperson">寄件人</view>
+      <view class="shiming">微信地址簿</view>
+      <view class="shiming">地址簿</view>
+    </view>
+    <view class="rname">
+      <input placeholder="真实姓名" bindinput="inputname"/>
+    </view>
+    <view class="tel">
+      <input placeholder="电话" bindinput="inputtel"/>
+    </view>
+
+    <view class="picksection">
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view>
+          {{region[0]}}{{region[1]}}{{region[2]}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="address">
+      <input placeholder="详细地址 (例如**街**号**)" bindinput="inputaddress" />
+    </view>
+    <view>
+    </view>
+  </view>
+  <view style="margin: 25rpx 0rpx 25rpx 20rpx;">历史地址</view>
+      <view class="his">
+        <view>xx 13356742657</view>
+        <view>镇江市丹徒区高姿街道长晖路666号江苏科技大学新校区西片区</view>
+      </view>
+      <view style="margin-top: 125rpx;"><button type="warn" bind:tap="onConfirm">确定</button></view>
+    </view>

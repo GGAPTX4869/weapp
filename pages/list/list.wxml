@@ -1,0 +1,21 @@
+<view class="address-container">
+  <view class="address-list" wx:if="{{sendingList.length > 0}}">
+    <block
+      wx:for="{{sendingList}}"
+      wx:for-index="index"
+      wx:for-item="sending"
+      wx:key="sendingId"
+    >
+      <view class="address-item">
+        <view class="info-item">发送信息:</view>
+        <view>{{sending.send_name}} - {{sending.send_tel}} - {{sending.send_region.join(' ')}} - {{sending.send_detail}}</view>
+        <view class="info-item">接收信息:</view>
+        <view>{{sending.get_name}} - {{sending.get_tel}} - {{sending.get_region.join(' ')}} - {{sending.get_detail}}</view>
+      </view>
+    </block>
+  </view>
+  <view wx:else class="no-address">
+    <!-- 当地址列表为空时显示的内容 -->
+    <view>暂无发送信息</view>
+  </view>
+</view>

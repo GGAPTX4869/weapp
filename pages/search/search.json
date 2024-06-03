@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+  
+    "van-image": "@vant/weapp/image/index",
+    "van-loading": "@vant/weapp/loading/index"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "查询历史",
+  "navigationBarTextStyle":"black",
+   "navigationBarBackgroundColor": "#ffffff"
+}

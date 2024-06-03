@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="header">地址簿</view>
+  <view class="address-list">
+    <view wx:for="{{addresses}}" wx:key="index" class="address-item">
+      <view class="name-tel">
+        <view class="name">{{item.name}}</view>
+        <view class="tel">{{item.tel}}</view>
+      </view>
+      <view class="region">{{item.region}}</view>
+      <view class="detail">{{item.detail}}</view>
+      
+      <button bindtap="deleteAddress" data-id="{{item._id}}" class="delete-btn">
+        <image src="../../images/delete.png" class="button-image"></image>
+      </button>
+      <navigator url="../edit/edit?id={{item._id}}&name={{item.name}}&tel={{item.tel}}&region={{item.region}}&detail={{item.detail}}">
+        <button bindtap="updateAddress" data-id="{{item._id}}" class="update-btn">
+          <image src="../../images/edit.png" class="button-image"></image>
+        </button>
+      </navigator>
+    </view>
+  </view>
+  <navigator url="../add/add">
+    <button bindtap="addAddress" class="add-btn">
+      <image src="../icon/add.png" class="button-image"></image>新建地址
+    </button>
+  </navigator>
+</view>

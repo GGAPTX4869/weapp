@@ -1,0 +1,11 @@
+/* 轮播图 */
+.swiper-container{
+  width: 100%;
+}
+.item{
+  height: 150px;
+}
+.item image{
+  width: 100%;
+  height: 100%;
+}

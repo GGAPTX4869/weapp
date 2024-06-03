@@ -1,0 +1,60 @@
+.container {
+  padding: 20px;
+  background-color:pink;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.address-list {
+  border-radius: 10px;
+  width: 80%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.address-item {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.region, .detail {
+  color: #888;
+}
+
+.delete-btn, .update-btn, .add-btn {
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: skyblue;
+}
+
+.button-image {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.name-tel {
+  display: flex;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 15px; /* 调整 name 和 tel 元素之间的间距 */
+}
+
+.tel {
+  color: #666;
+}
+

@@ -1,0 +1,62 @@
+<!-- 轮播图区域 -->
+<swiper class="swiper-container" indicator-dots indicator-color="#fff" autoplay interval="3000" circular>
+    <!-- 轮播项 -->
+    <swiper-item>
+      <view class="item">
+        <image src="/images/banner1.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="/images/banner2.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="item">
+        <image src="/images/banner3.jpg" mode="aspectFill"></image>
+      </view>
+    </swiper-item>
+  </swiper>
+
+<van-notice-bar
+  scrollable="{{ false }}"
+  text="普通会员领本月惊喜红包，电子最高23元免单券奖励"
+/>
+
+<van-grid direction="horizontal" column-num="2">
+<navigator url = "../send/send">
+  <van-grid-item icon="./static/13.png" text = "寄快递" />
+</navigator>
+  <van-grid-item icon="./static/14.png"  bindtap="scanQRCode" text = "扫码取件" />
+
+</van-grid>
+
+<van-grid>
+<navigator url = "../send/send">
+  <van-grid-item icon="./static/1.png" text="Excel寄" />
+  <van-grid-item icon="./static/2.png" text="同城急送" />
+  <van-grid-item icon="./static/3.png" text="寄大件" />
+  <van-grid-item icon="./static/4.png" text="丰巢寄件" />
+  <van-grid-item icon="./static/5.png" text="批量寄" />
+  <van-grid-item icon="./static/6.png" text="港澳台寄递" />
+  <van-grid-item icon="./static/7.png" text="国际寄递" />
+  <van-grid-item icon="./static/8.png" text="代收贷款" />
+</navigator>
+  <van-grid-item icon="./static/9.png" text="学生专享" />
+  <van-grid-item icon="./static/10.png" text="生鲜寄" />
+  <van-grid-item icon="./static/11.png" text="网购退货" />
+  <van-grid-item icon="./static/12.png" text="顺丰集运" />
+</van-grid>
+
+<image class="image" src="../../images/111.png"></image>
+<van-grid direction="horizontal" column-num="2">
+  <van-grid-item icon="./static/15.png" text = "在线客服" />
+  <van-grid-item icon="./static/16.png" text = "企业合作" />
+</van-grid>
+
+
+
+
+
+
+

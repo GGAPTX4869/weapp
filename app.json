@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/list/list",
+    "pages/edit/edit",
+    "pages/search/search",
+    "pages/send/send",
+    "pages/jijian/jijian",
+    "pages/shoujian/shoujian",
+    "pages/orderdetail/orderdetail",
+    "pages/shops/shops",
+    "pages/shop_detail/shop_detail",
+    "pages/new_cart/new_cart",
+    "pages/add/add",
+    "pages/address/address",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/wuliu/wuliu"
+    
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle":"black",
+    "color": "#000",
+    "selectedColor": "#b294db",
+    "position": "bottom",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/icon/首页.png",
+        "selectedIconPath": "pages/icon/首页(1).png"
+      },
+      {
+        "text": "主页",
+        "pagePath": "pages/home/home",
+        "iconPath": "pages/icon/主页.png",
+        "selectedIconPath": "pages/icon/主页 (1).png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "查询记录",
+        "iconPath": "pages/icon/查询物流 .png",
+        "selectedIconPath": "pages/icon/查询物流1.png"
+      },
+      {
+        "pagePath": "pages/shops/shops",
+        "text": "商品",
+        "iconPath": "pages/icon/商品.png",
+        "selectedIconPath": "pages/icon/商品 (1).png"
+      }
+      
+    ]
+  },
+  "usingComponents": {
+    "van-button":"@vant/weapp/button/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-empty": "@vant/weapp/empty/index",
+    "van-tree-select": "@vant/weapp/tree-select/index",
+    "van-card": "@vant/weapp/card/index",
+    "van-goods-action": "@vant/weapp/goods-action/index",
+    "van-goods-action-icon": "@vant/weapp/goods-action-icon/index",
+    "van-goods-action-button": "@vant/weapp/goods-action-button/index",
+    "van-cell": "@vant/weapp/cell/index"
+  },
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
